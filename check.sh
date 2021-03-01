@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# if [ "$2" = "-s" ]; then flag_a=1 fi
+sleeptime=0.2
+
 if [[ $# -eq 0 ]] ; then
     printf "Запусти ./check с аргументом нужных карт (из файла):\n"
 	printf "1 - RGB \n2 - map area \n3 - res\n"
@@ -20,6 +21,7 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_RGB_0$i.cub
 		fi
+	sleep $sleeptime
 	done
 fi
 
@@ -35,6 +37,7 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_map_area_0$i.cub
 		fi
+		sleep $sleeptime
 	done
 fi
 
@@ -65,6 +68,7 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_tex_EA_0$i.cub
 		fi
+	sleep $sleeptime
 	done
 fi
 
@@ -80,6 +84,7 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_tex_NO_0$i.cub
 		fi
+	sleep $sleeptime
 	done
 fi
 
@@ -95,6 +100,7 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_tex_SO_0$i.cub
 		fi
+	sleep $sleeptime
 	done
 fi
 
@@ -110,5 +116,6 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_tex_WE_0$i.cub
 		fi
+	sleep $sleeptime
 	done
 fi
