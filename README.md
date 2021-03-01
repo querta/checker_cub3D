@@ -10,4 +10,4 @@ This script checks only how your cub3D project is working with invalid maps.
 4. Check several times.
 
 You can add these file to your .gitignore file
-`echo -e 'valid_maps/* \ninvalid_maps/* \nchecker_cub3D/* \nwolfrex/* \nchecker.sh' >> .gitignore`
+`echo -e 'invalid_maps/* \nchecker_cub3D/* \nwolftex/* \nchecker.sh' >> .gitignore`

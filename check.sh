@@ -53,6 +53,7 @@ printf "\e[1;36m\
 		else
 			./cub3D ./invalid_maps/invalid_res_0$i.cub
 		fi
+	sleep $sleeptime
 	done
 fi
 
